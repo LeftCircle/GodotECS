@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="System" load_steps=2 format=3 uid="uid://p8jpmoxdffaq"]
+
+[ext_resource type="Script" path="res://RefCounted/ECS/System.gd" id="1_nq1st"]
+
+[resource]
+script = ExtResource("1_nq1st")
+required_components = Array[Resource("res://Resources/Component.gd")]([null])
