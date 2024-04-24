@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 EcsCoordinator="*res://Singletons/ECS/ECSCoordinator.gd"
+EcsInitializer="*res://Singletons/ECS/ECSInitializer.tscn"
 
 [editor_plugins]
 

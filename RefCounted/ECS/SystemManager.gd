@@ -24,3 +24,6 @@ func entity_signature_changed(entity : int, new_signature : int) -> void:
 		else:
 			id_to_system[system].entities.erase(entity)
 
+func update_systems(delta : float) -> void:
+	for system in system_to_signature.keys():
+		system.update(delta)

@@ -2,7 +2,6 @@
 extends RefCounted
 class_name ComponentArray
 
-
 var components : Array = []
 var entity_to_index : Dictionary = {}
 var index_to_entity : Dictionary = {}
@@ -10,7 +9,6 @@ var size : int = 0
 
 func _init() -> void:
 	components.resize(EntityManager.MAX_ENTITIES)
-
 
 func insert_data(entity : int, component : Variant) -> void:
 	assert(!entity_to_index.has(entity), "Component added to same entity more than once.")

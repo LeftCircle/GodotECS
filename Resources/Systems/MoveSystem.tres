@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="System" load_steps=2 format=3 uid="uid://p8jpmoxdffaq"]
+[gd_resource type="Resource" script_class="System" load_steps=3 format=3 uid="uid://p8jpmoxdffaq"]
 
-[ext_resource type="Script" path="res://RefCounted/ECS/System.gd" id="1_nq1st"]
+[ext_resource type="Resource" uid="uid://dmgf51blqrqh3" path="res://Resources/Components/Move.tres" id="1_570y6"]
+[ext_resource type="Script" path="res://Resources/System.gd" id="1_nq1st"]
 
 [resource]
 script = ExtResource("1_nq1st")
-required_components = Array[Resource("res://Resources/Component.gd")]([null])
+required_components = Array[Resource("res://Resources/Component.gd")]([ExtResource("1_570y6")])

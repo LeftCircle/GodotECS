@@ -3,6 +3,7 @@ extends RefCounted
 class_name EntityManager
 
 const MAX_ENTITIES = 1000
+const NULL_ID = -1
 
 var available_ids : PackedInt32Array = []
 var living_entities : int = 0

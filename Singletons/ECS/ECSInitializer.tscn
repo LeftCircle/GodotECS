@@ -1,0 +1,12 @@
+[gd_scene load_steps=5 format=3 uid="uid://dtabufcecpnwo"]
+
+[ext_resource type="Script" path="res://Singletons/ECS/ECSInitializer.gd" id="1_dh2rj"]
+[ext_resource type="Resource" uid="uid://ceub0tukfhumv" path="res://Resources/ComponentResourceGroup.tres" id="2_3gkuo"]
+[ext_resource type="Resource" uid="uid://bc82v1vlrr8sp" path="res://Resources/SystemResourceGroup.tres" id="3_465x8"]
+[ext_resource type="Resource" uid="uid://bpkhpo30hbrwg" path="res://Scenes/Components/ComponentSceneGroup.tres" id="4_tnbss"]
+
+[node name="EcsInitializer" type="Node"]
+script = ExtResource("1_dh2rj")
+component_groups = ExtResource("2_3gkuo")
+system_groups = ExtResource("3_465x8")
+compont_scene_rg = ExtResource("4_tnbss")
