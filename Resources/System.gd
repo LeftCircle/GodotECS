@@ -1,7 +1,7 @@
 extends Resource
 class_name System
 
-@export var required_components : Array[Component] = []
+@export var required_components : Array = []
 
 var entities : Dictionary = {}
 

@@ -12,7 +12,7 @@ func test_all_ecs_scenes_add_to_entity_on_ready() -> void:
 		var scene = packed_scene.instantiate()
 		test_entity.add_child(scene)
 		await get_tree().process_frame
-		assert_true(EcsCoordinator.has_component(test_entity.entity_id, scene))
+		assert_true(EcsCoordinator.has_component(test_entity.entity_id, scene.get_script()))
 		scene.queue_free()
 
 func test_remove_component_queues_free_if_scene() -> void:
@@ -22,11 +22,12 @@ func test_remove_component_queues_free_if_scene() -> void:
 	component_scene_rg.load_all_into(c_scenes)
 	for packed_scene in c_scenes:
 		var scene = packed_scene.instantiate()
+		var script : Script = scene.get_script()
 		test_entity.add_child(scene)
 		await get_tree().process_frame
-		EcsCoordinator.remove_component(test_entity.entity_id, scene)
+		EcsCoordinator.remove_component(test_entity.entity_id, script)
 		assert_true(scene.is_queued_for_deletion())
-		assert_false(EcsCoordinator.has_component(test_entity.entity_id, scene))
+		assert_false(EcsCoordinator.has_component(test_entity.entity_id, script))
 
 func test_entity_id_increments_on_entity_creation() -> void:
 	var entity1 = Entity.new()

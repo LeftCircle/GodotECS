@@ -22,6 +22,8 @@ func remove_data(entity : int) -> void:
 	assert(entity_to_index.has(entity), "Removing non-existent component.")
 	var index : int = entity_to_index[entity]
 	var last_entity : int = index_to_entity[size - 1]
+	if components[index].is_class("Node"):
+		components[index].queue_free()
 	components[index] = components[size - 1]
 	entity_to_index[last_entity] = index
 	index_to_entity[index] = last_entity

@@ -3,4 +3,5 @@
 [ext_resource type="Script" path="res://Scenes/Components/ComponentSceneScripts/ECSCharacterBody2D.gd" id="1_wknqg"]
 
 [node name="EcsCharacterBody2d" type="CharacterBody2D"]
+motion_mode = 1
 script = ExtResource("1_wknqg")
