@@ -36,8 +36,8 @@ func remove_component(entity: int, script: Script) -> void:
 func get_component(entity: int, script : Script):
 	return component_manager.get_component(entity, script)
 
-func get_component_w_class_id(entity : int, class_id : StringName):
-	return component_manager.get_component_w_class_id(entity, class_id)
+func get_component_array(script : Script) -> ComponentArray:
+	return component_manager.component_arrays[script]
 
 func get_component_signature(script : Script) -> int:
 	return component_manager.get_component_signature(script)
