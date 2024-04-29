@@ -7,7 +7,6 @@ This is gdscript implementation of an entity component system with Godot, heavil
 ### The Entity
 Entities extend Node, which allows us to add things that are not purely just data such as Sprites to the entity. An entity is created by creating a new scene of type Entity. All required components for the entity are then added by code via 
 `EcsCoordinator.add_component(entity : int, component : Object)`. Any component that is added via the editor must be a [Component Scene](#ComponentScenes) in order to be added to the Component Manager
-Provide step-by-step instructions on how to install the project. Include any prerequisites or dependencies.
 
 ## Components
 Components are resources that are added to the Resources -> Components folder. They must be added to this folder so that the ComponentResourceGroup registers the component at the start of the game. Components extend the Component resource, and are simply data containers with no functionality. They are used to store data that is used and updated for gameplay. 
