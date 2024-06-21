@@ -1,8 +1,8 @@
 extends GutTest
 
-var comp_rg : ResourceGroup = load("res://Resources/ComponentResourceGroup.tres")
-var sys_rg : ResourceGroup = load("res://Resources/SystemResourceGroup.tres")
-var scene_rg : ResourceGroup = load("res://Scenes/Components/ComponentSceneGroup.tres")
+var comp_rg : ResourceGroup = load("res://addons/lls_ecs/Resources/ComponentResourceGroup.tres")
+var sys_rg : ResourceGroup = load("res://addons/lls_ecs/Resources/SystemResourceGroup.tres")
+var scene_rg : ResourceGroup = load("res://addons/lls_ecs/Scenes/Components/ComponentSceneGroup.tres")
 
 func test_components_are_registered() -> void:
 	# Check to see if all of the components are registered to the component system.

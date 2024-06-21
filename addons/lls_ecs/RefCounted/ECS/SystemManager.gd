@@ -12,7 +12,7 @@ func set_signature(system : System, signature : int) -> void:
 	assert(script_to_system.has(system.get_script()))
 	system_to_signature[system] = signature
 
-func entity_destoryed(entity : int) -> void:
+func entity_destroyed(entity : int) -> void:
 	for system in system_to_signature.keys():
 		system.entities.erase(entity)
 

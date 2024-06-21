@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ResourceGroup" load_steps=2 format=3 uid="uid://ceub0tukfhumv"]
+
+[ext_resource type="Script" path="res://addons/godot_resource_groups/resource_group.gd" id="1_f0hxs"]
+
+[resource]
+script = ExtResource("1_f0hxs")
+base_folder = "res://addons/lls_ecs/Resources/Components"
+includes = Array[String](["*.tres"])
+excludes = Array[String]([])
+paths = Array[String](["res://addons/lls_ecs/Resources/Components/Move.tres"])

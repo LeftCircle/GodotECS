@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bmwoaa75cbx28"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_qvkx4"]
-[ext_resource type="PackedScene" uid="uid://cdbddrrniwjbp" path="res://Scenes/Demos/FallingCharacters.tscn" id="2_d4t0f"]
+[ext_resource type="PackedScene" uid="uid://cdbddrrniwjbp" path="res://addons/lls_ecs/Scenes/Demos/FallingCharacters.tscn" id="2_d4t0f"]
 
 [node name="main" type="Node"]
 script = ExtResource("1_qvkx4")

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ResourceGroup" load_steps=2 format=3 uid="uid://bpkhpo30hbrwg"]
+
+[ext_resource type="Script" path="res://addons/godot_resource_groups/resource_group.gd" id="1_00r1f"]
+
+[resource]
+script = ExtResource("1_00r1f")
+base_folder = "res://addons/lls_ecs/Scenes/Components/ComponentScenes"
+includes = Array[String](["*.tscn"])
+excludes = Array[String]([])
+paths = Array[String](["res://addons/lls_ecs/Scenes/Components/ComponentScenes/ECSCharacterBody2D.tscn"])

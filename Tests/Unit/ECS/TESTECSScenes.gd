@@ -1,7 +1,7 @@
 extends GutTest
 
-var component_scene_rg : ResourceGroup = load("res://Scenes/Components/ComponentSceneGroup.tres")
-var ecs_cbd_ps : PackedScene = load("res://Scenes/Components/ComponentScenes/ECSCharacterBody2D.tscn")
+var component_scene_rg : ResourceGroup = load("res://addons/lls_ecs/Scenes/Components/ComponentSceneGroup.tres")
+var ecs_cbd_ps : PackedScene = load("res://addons/lls_ecs/Scenes/Components/ComponentScenes/ECSCharacterBody2D.tscn")
 
 func test_all_ecs_scenes_add_to_entity_on_ready() -> void:
 	var test_entity = Entity.new()

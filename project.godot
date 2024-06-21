@@ -17,8 +17,8 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-EcsCoordinator="*res://Singletons/ECS/ECSCoordinator.gd"
-EcsInitializer="*res://Singletons/ECS/ECSInitializer.tscn"
+EcsCoordinator="*res://addons/lls_ecs/Singletons/ECS/ECSCoordinator.gd"
+EcsInitializer="*res://addons/lls_ecs/Singletons/ECS/ECSInitializer.tscn"
 
 [editor_plugins]
 
@@ -27,9 +27,9 @@ enabled=PackedStringArray("res://addons/godot_resource_groups/plugin.cfg", "res:
 [file_customization]
 
 folder_colors={
-"res://RefCounted/": "blue",
-"res://Resources/": "yellow",
-"res://Scenes/": "green",
-"res://Singletons/": "purple",
-"res://Tests/": "red"
+"res://Tests/": "red",
+"res://addons/lls_ecs/RefCounted/": "blue",
+"res://addons/lls_ecs/Resources/": "yellow",
+"res://addons/lls_ecs/Scenes/": "green",
+"res://addons/lls_ecs/Singletons/": "purple"
 }

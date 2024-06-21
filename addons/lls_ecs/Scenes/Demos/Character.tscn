@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://diatovhe2ldhl"]
 
-[ext_resource type="Script" path="res://Scenes/Entity/Entity.gd" id="1_mkck8"]
-[ext_resource type="Script" path="res://Scenes/Components/ComponentSceneScripts/ECSCharacterBody2D.gd" id="2_cyf3j"]
+[ext_resource type="Script" path="res://addons/lls_ecs/Scenes/Entity/Entity.gd" id="1_mkck8"]
+[ext_resource type="Script" path="res://addons/lls_ecs/Scenes/Components/ComponentSceneScripts/ECSCharacterBody2D.gd" id="2_cyf3j"]
 [ext_resource type="Texture2D" uid="uid://b7636es6ihn2o" path="res://icon.svg" id="3_efhf8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vcfwt"]

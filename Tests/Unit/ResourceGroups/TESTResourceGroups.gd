@@ -1,8 +1,8 @@
 extends GutTest
 
 
-var component_resource_groups : ResourceGroup = load("res://Resources/ComponentResourceGroup.tres")
-var scene_rg : ResourceGroup = load("res://Scenes/Components/ComponentSceneGroup.tres")
+var component_resource_groups : ResourceGroup = load("res://addons/lls_ecs/Resources/ComponentResourceGroup.tres")
+var scene_rg : ResourceGroup = load("res://addons/lls_ecs/Scenes/Components/ComponentSceneGroup.tres")
 
 func test_move_has_class_id() -> void:
 	var resources = []
