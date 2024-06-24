@@ -22,7 +22,7 @@ EcsInitializer="*res://addons/lls_ecs/Singletons/ECS/ECSInitializer.tscn"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/godot_resource_groups/plugin.cfg", "res://addons/gut/plugin.cfg")
+enabled=PackedStringArray("res://addons/godot_resource_groups/plugin.cfg", "res://addons/gut/plugin.cfg", "res://addons/lls_ecs/plugin.cfg")
 
 [file_customization]
 
