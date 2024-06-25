@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://dtqvbwwtdc46w"]
+
+[ext_resource type="Script" path="res://addons/lls_ecs/Scenes/Plugin/Popups/twindow.gd" id="1_wuj8s"]
+
+[node name="Twindow" type="Window"]
+title = "Create Component"
+initial_position = 4
+unresizable = true
+always_on_top = true
+extend_to_title = true
+script = ExtResource("1_wuj8s")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Hello World"
+
+[connection signal="close_requested" from="." to="." method="_on_close_requested"]

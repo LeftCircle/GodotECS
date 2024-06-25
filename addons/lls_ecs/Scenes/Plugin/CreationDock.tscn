@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://dawkwv6ny8y23"]
+
+[ext_resource type="Script" path="res://addons/lls_ecs/Scenes/Plugin/CreationDock.gd" id="1_a7v4a"]
+[ext_resource type="Script" path="res://addons/lls_ecs/Scenes/Plugin/ComponentButton.gd" id="1_j6jyx"]
+[ext_resource type="PackedScene" uid="uid://dtqvbwwtdc46w" path="res://addons/lls_ecs/Scenes/Plugin/Popups/twindow.tscn" id="3_i6pfe"]
+
+[node name="CreationDock" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a7v4a")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ComponentButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Create Component"
+script = ExtResource("1_j6jyx")
+script_dir = "res://addons/lls_ecs/Resources/ComponentScripts"
+resource_dir = "res://addons/lls_ecs/Resources/Components"
+popup_scene = ExtResource("3_i6pfe")
+
+[node name="SystemButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Create Godot Component"
+
+[node name="GodotComponent" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Create System"

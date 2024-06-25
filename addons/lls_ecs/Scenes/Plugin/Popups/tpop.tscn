@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://l3tsrjkua8up"]
+
+[ext_resource type="Script" path="res://addons/lls_ecs/Scenes/Plugin/Popups/tpop.gd" id="1_x1ajj"]
+
+[node name="Tpop" type="PopupPanel"]
+title = "Test Popup"
+initial_position = 4
+visible = true
+always_on_top = true
+keep_title_visible = true
+script = ExtResource("1_x1ajj")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 96.0
+offset_bottom = 96.0
+text = "Hello World"
